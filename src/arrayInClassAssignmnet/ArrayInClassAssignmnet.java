@@ -1,5 +1,7 @@
 package arrayInClassAssignmnet;
 
+import java.util.Arrays;
+
 public class ArrayInClassAssignmnet 
 {
 
@@ -14,11 +16,15 @@ public class ArrayInClassAssignmnet
 			for ( int i=0; i<arr.length; i++ )
 				System.out.print( arr[i] + " " );
 			System.out.println();
+			
+			//array sort class
+			// Arrays.sort(arr);
+			
 
 			// Swap the values around to put them ascending order
-			for (int i = 0; i < 10; i++)
+			for (int i = 0; i < arr.length; i++)
 			{
-				for (int j = 0; j < 9 ; j++ )
+				for (int j = 0; j < arr.length-1 ; j++ )
 				{
 					if (arr[j] > arr[j+1])
 					{
